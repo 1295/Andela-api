@@ -17,7 +17,7 @@ app.use(express.static(distDir));
 var db;
 
 // Connect to the database before starting the application server.
-mongodb.MongoClient.connect(process.env.'mongodb://ola1295:electricity1295@ds243285.mlab.com:43285/andela-api', function (err, database) {
+mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   if (err) {
     console.log(err);
     process.exit(1);
