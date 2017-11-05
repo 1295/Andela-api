@@ -25,7 +25,7 @@ export class ContactListComponent implements OnInit {
           if (!contact.phone) {
             contact.phone = {
               mobile: '',
-              work: ''
+              department: ''
             }
           }
           return contact;
@@ -48,7 +48,7 @@ export class ContactListComponent implements OnInit {
       name: '',
       email: '',
       phone: {
-        work: '',
+        department: '',
         mobile: ''
       }
     };

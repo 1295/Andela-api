@@ -4,6 +4,6 @@ export class Contact {
   email: string;
   phone: {
     mobile: string;
-    work: string;
+    department: string;
   }
 }
